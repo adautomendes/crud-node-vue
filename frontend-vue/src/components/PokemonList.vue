@@ -21,8 +21,12 @@
         </td>
         <td>{{ pokemon.name }}</td>
         <td>{{ pokemon.cp }}</td>
-        <td><img src="../assets/edit.png" /></td>
-        <td><img src="../assets/remove.png" /></td>
+        <td>
+          <img src="../assets/edit.png" />
+        </td>
+        <td>
+          <img src="../assets/remove.png" />
+        </td>
       </tr>
     </tbody>
   </table>
@@ -36,7 +40,8 @@ export default {
 
   data() {
     return {
-      pokemons: []
+      pokemons: [],
+      ids: []
     };
   },
 
@@ -45,6 +50,10 @@ export default {
       .get("http://localhost:3000/pokemon")
       .then(response => {
         this.pokemons = response.data;
+
+        for (const pokemon of this.pokemons) {
+          this.ids.push(pokemon.id);
+        }
       })
       .catch(err => {
         console.log(`Error => ${err}`);

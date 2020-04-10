@@ -13,9 +13,7 @@
       <label>CP</label>
     </div>
     <div class="input-field col s12 m2 l2">
-      <button @click="salvar(pokemon)" class="btn waves-effect waves-light">
-        Save
-      </button>
+      <button @click="salvar(pokemon)" class="btn waves-effect waves-light">Save</button>
     </div>
   </div>
 </template>
@@ -31,9 +29,11 @@ export default {
       pokemon: {}
     };
   },
+
   methods: {
     salvar: pokemon => {
-      console.log(pokemon);
+      console.log(JSON.stringify(pokemon));
+      //GET by ID -> if (insert/update) -> post/patch
     }
   }
 };
