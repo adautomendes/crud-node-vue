@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/pokemon">Pokemon</router-link>
+      <router-link to="/">Pokemon</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-import M from 'materialize-css';
+import M from "materialize-css";
 
 export default {
-    created () {
-        M.AutoInit();
-    }
-}
+  created() {
+    M.AutoInit();
+  }
+};
 </script>
 
 <style>
