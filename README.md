@@ -7,11 +7,23 @@
 ## Backend setup
 
 1 - Config backend-node/database/Conexao.js file with your database credentials  
-2 - Install the node dependencies from backend <pre>yarn install</pre>  
-3 - On the terminal within backend-node directory run the application using <pre>yarn start</pre>  
+2 - Install the node dependencies from backend
+```
+yarn install
+```
+3 - On the terminal within backend-node directory run the application using
+```
+yarn start
+```
 
 ## Frondend setup
 
-1 - Install the node dependencies from frontend <pre>yarn install</pre>  
-2 - On the terminal within frontend-vue directory run the application using <pre>yarn serve</pre>  
-3 - Open <pre>http://localhost:8080/<pre>  
+1 - Install the node dependencies from frontend
+```
+yarn install
+```
+2 - On the terminal within frontend-vue directory run the application using
+```
+yarn serve
+```
+3 - Open <pre>http://localhost:8080/<pre>
